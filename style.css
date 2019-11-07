@@ -465,10 +465,6 @@ footer {
 
 @media (min-width: 990px) and (max-width: 1400px)
 {
-    .solid {
-        opacity: 1;
-    }
-
     #slider .container-fluid{
         left: 10%;
         top:25%;
