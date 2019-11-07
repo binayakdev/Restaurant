@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+
+                    var hash = this.hash;
+
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+
+            $(window).scroll(function () {
+                // checks if window is scrolled more than 500px, adds/removes solid class
+                if ($(this).scrollTop() > 0) {
+                    $('.navbar').addClass('solid');
+                } else {
+                    $('.navbar').removeClass('solid');
+                }
+            });
+        });
+    </script>
+    <title>Welcome</title>
+</head>
+
+<body>
+    <div id="header-address">Adarsa Marg-1, New Baneshwor, Kathmandu (977) 9801223119</div>
+
+    <!-- This is the navbar of the page -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a href="index.html" class="navbar-brand"><img src="./images/logo_transparent.png" alt="Sam's Grill"
+                    height="100" width="100"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="navbar-nav ml-auto mr-12">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="slider">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 img-responsive" src="./images/burger.jpg" width="100%" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 img-responsive" src="./images/momo.jpg" width="100%" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100  img-responsive" src="./images/chicken.jpg" width="100%"
+                        alt="Third slide">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row row-centered pos">
+                <div>
+                    <h1>Welcome to Sam's Grill</h1><br>
+                    <p>One of the finest kitchen in the town. Sam's Grill's delicacies are to die for. The seasonal menu
+                        showcases
+                        a variety of Continental flavors and techniques, but is quintessentially Nepalese.
+                    </p>
+                    <a href="#">
+                        <p>Learn More ></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Today's Special -->
+    <section class="gallery-block compact-gallery">
+        <div class="container">
+            <div class="heading">
+                <h2>Today's Special</h2>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-6 item zoom-on-hover">
+                    <a href="./images/dish1.jpg" class="lightbox">
+                        <img src="./images/dish1.jpg" height="100%" width="100%">
+                        <span class="description">
+                            <span class="description-heading">Naan Roti & Chicken</span>
+                            <span class="description-body">.Lorem .ipsum dolor .sit amet .consectetur .adipisicing .elit
+                                Et,
+                                unde.
+                                unde.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-6 item zoom-on-hover">
+                    <a href="./images/dish2.jpg" class="lightbox">
+                        <img src="./images/dish2.jpg" height="100%" width="100%">
+                        <span class="description">
+                            <span class="description-heading">Bolognese</span>
+                            <span class="description-body">.Lorem .ipsum dolor .sit amet .consectetur .adipisicing .elit
+                                Et,
+                                unde.
+                                unde.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-6 item zoom-on-hover">
+                    <a href="./images/dish3.jpg" class="lightbox">
+                        <img src="./images/dish3.jpg" height="100%" width="100%">
+                        <span class="description">
+                            <span class="description-heading">Chicken Biryani</span>
+                            <span class="description-body">.Lorem .ipsum dolor .sit amet .consectetur .adipisicing .elit
+                                Et,
+                                unde.
+                                unde.</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-6 col-lg-6 item zoom-on-hover">
+                    <a href="./images/dish4.jpg" class="lightbox">
+                        <img src="./images/dish4.jpg" height="100%" width="100%">
+                        <span class="description">
+                            <span class="description-heading">Cheese Pizza (with Olives)</span>
+                            <span class="description-body">.Lorem .ipsum dolor .sit amet .consectetur .adipisicing .elit
+                                Et,
+                                unde.
+                                unde.</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="open-close">
+        <div class="container-fluid">
+            <h1>Opening and Closing Hours</h1>
+            <ul>
+                <li>. Sunday { 7am - 11pm }</li>
+                <li>. Monday { 7am - 11pm }</li>
+                <li>. Tuesday { 7am - 11pm }</li>
+                <li>. Wednesday { 7am - 11pm }</li>
+                <li>. Thursday { 7am - 11pm }</li>
+                <li>. Friday { 7am - 11pm }</li>
+                <li>. Saturday { 10am - 11pm }</li>
+            </ul>
+            <button type="button">Inquire Now</button>
+            <h1 style="margin-top: 20px;">Reservations</h1>
+            <p style="padding: 0 20% 0 20%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit
+                nisi,
+                porro dignissimos qui sunt
+                itaque? Sequi veritatis ab odit, <span style="color: rgb(123, 157, 108);">hic ea repellat pariatur
+                    sint,</span> magnam omnis doloremque maiores in,
+                tempora beatae fuga quasi? Laboriosam voluptatum nisi ab excepturi expedita reiciendis assumenda
+                maiores, et debitis, sint aspernatur <span style="color: rgb(123, 157, 108);">autem culpa amet?</span>
+            </p>
+            <h1 style="margin-top: 20px;">Order Online</h1>
+            <img height="20%" width="20%" src="./images/online-order.png" alt="Foodmandu" class="img-responsive">
+            <button style="color: rgb(123, 157, 108); border-color: rgb(123, 157, 108);" type="button">Order
+                Now</button>
+        </div>
+    </section>
+
+    <!-- This is the Google Maps -->
+    <div class="container-fluid maps">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 col-md-12 google-maps google-map"
+                style="margin: 0 auto; float: none; padding: 20px 0 20px 0;">
+                <img class="img-responsive google-maps" src="./images/google-maps.JPG" alt="Google Maps">
+                <div id="google-link">
+                    <button type="button" onclick="follow_google_maps()">Check in Google Maps</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the contact us form -->
+    <div id="contact">
+        <div class="container contact-form">
+            <div class="contact-image">
+                <img src="./images/logo_transparent.png" alt="rocket_contact" />
+            </div>
+            <form method="post">
+                <h3>Drop Us a Message</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Name..." value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Email..." value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="txtPhone" class="form-control" placeholder="Phone Number..."
+                                value="" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                                style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                        <div class="form-group" style="text-align: end;">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid footer-wrapper">
+            <div class="row no-gutters" style="text-align: center;">
+                <div class="col-6 col-sm-3 col-md-4 col-centered" id="footer-logo">
+                    <img src="./images/logo-footer.png" height="100%" width="50%" alt="Logo-footer"
+                        class="img-responsive">
+                </div>
+                <div class="w-100"></div>
+                <div class="col-10 col-sm-4 col-md-6 col-centered">Adarsa Marg-1, New Baneshwor,
+                    Kathmandu</div>
+                <div class="w-100"></div>
+                <div class="col-6 col-sm-4 col-centered">(977) 9801223119</div>
+                <div class="w-100"></div>
+                <div class="col-6 col-sm-3 col-centered">Follow Us</div>
+                <div class="w-100"></div>
+                <div class="col-6 col-sm-3 col-md-3 col-centered">
+                    <div id="social-media">
+                        <img src="./images/facebook.png" alt="" height="30px" width="30px">
+                        <img src="./images/twitter.png" alt="" height="30px" width="30px">
+                        <img src="./images/instagram.png" alt="" height="30px" width="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
