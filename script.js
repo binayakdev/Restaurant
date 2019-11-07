@@ -4,6 +4,22 @@ function follow_google_maps() {
     win.focus();
 }
 
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById('navigator').style.display = "block";
+    } else {
+        console.log("True");
+        document.getElementById('navigator').style.display = "none";
+    }
+}
+
+function scrollUp() {
+    console.log("Up up and away!!");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 $(document).ready(function () {
 
     $("a").on('click', function (event) {

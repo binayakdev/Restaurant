@@ -4,6 +4,36 @@
     margin: 0;
 }
 
+#navigator {
+    background-color: rgb(0, 22, 40);
+    padding: 15px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 100;
+    right: 40px;
+    bottom: 5%;
+    text-align: center;
+    display: none;
+}
+
+#navigator svg {
+    height: 25px;
+    width: 25px;
+    fill: white;
+}
+
+#navigator:hover svg{
+    fill: rgb(182, 182, 182);
+}
+
+#navigator:active {
+    transform: scale(0.98);
+}
+
+#navigator:active svg {
+    fill: rgb(138, 138, 138);
+}
+
 header {
     position: fixed;
     width: 100%;
