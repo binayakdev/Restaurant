@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans+Condensed:300|Quicksand|Sacramento|Vollkorn|Montserrat&Abril+Fatfacedisplay=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans+Condensed:300|Quicksand|Sacramento|Vollkorn|Montserrat&Abril+Fatface|display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -197,10 +197,41 @@ header {
       text-align: center;
   }
   
-  .gallery-block .heading h2{
-      font-size: 5rem;
-      font-family: 'Sacramento', cursive;
-      color: white;
+  .svg-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: auto;  
+    justify-items: center;
+  }
+  .shape {
+    stroke-dasharray: 0 580;
+    stroke-dashoffset: 580;
+    stroke-width: 4px;
+    fill: transparent;
+    stroke: #fefefe;
+    border-bottom: 5px solid black;
+    transition: stroke-width 2.7s, stroke-dashoffset 2.7s, stroke-dasharray 1.3s;
+    transition-delay: 0s;
+    fill: rgb(20,20,20);  
+  }
+  .text {
+    font-family: 'David Libre';
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: #fff;
+    top: -48px;
+    position: relative;
+    text-align: center;
+    height: 60px;
+    font-variant: small-caps;
+  }
+  .shape-border {
+    stroke-width: 4px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 480 100;
   }
   
   .gallery-block.compact-gallery .item{
@@ -329,6 +360,24 @@ header {
 
 }
 
+
+/* This is the food menu styling */
+#food-menu .container-fluid {
+    padding: 5%;
+}
+
+#food-menu {
+    background-image: url(images/restaurant-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-bottom: -22px;
+}
+
+#food-menu img {
+    height: 100%;
+    width: 50%;
+}
+
   
 /* Test Code */
 
@@ -422,6 +471,15 @@ footer {
 
 @media (min-width: 320px) and (max-width: 990px) {
 
+    .heading svg {
+        width: 80%;       
+    }
+
+    .text {
+        font-size: 17px;
+        width: auto;
+    }
+
     .solid {
         opacity: 1;
         top: -53px;
@@ -460,6 +518,11 @@ footer {
     #open-close img{
         height:40%;
         width:40%;
+    }
+
+    #food-menu img {
+        height: 100%;
+        width: 70%;
     }
 
     .maps {
