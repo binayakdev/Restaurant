@@ -14,17 +14,18 @@
     <title>Welcome</title>
 </head>
 
-<body>
+<body></body>
+<div id="wrapper">
     <div id="navigator" onclick="scrollUp()">
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="284.929px" height="284.929px" viewBox="0 0 284.929 284.929"
             style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve">
             <g>
                 <path d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285
-               C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854
-               c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848
-               c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566
-               C284.929,199.378,283.984,197.188,282.082,195.285z" />
+                           C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854
+                           c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848
+                           c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566
+                           C284.929,199.378,283.984,197.188,282.082,195.285z" />
             </g>
             <g></g>
             <g></g>
@@ -55,10 +56,10 @@
             </button>
             <div class="collapse navbar-collapse" id="myMenu">
                 <ul class="navbar-nav ml-auto mr-12">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                    <li id="home-link" class="nav-item active-link"><a href="#" class="nav-link">Home</a></li>
+                    <li id="menu-link" class="nav-item"><a href="#food-menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+                    <li id="contact-link" class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -107,8 +108,8 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-md-6 col-lg-6 item zoom-on-hover">
-                    <a href="./images/dish1.jpg" class="lightbox">
-                        <img src="./images/dish1.jpg" height="100%" width="100%">
+                    <a href="./images/dish 1.jpg" class="lightbox">
+                        <img src="./images/dish 1.jpg" height="100%" width="100%">
                         <span class="description">
                             <span class="description-heading">Naan Roti & Chicken</span>
                             <span class="description-body">.Lorem .ipsum dolor .sit amet .consectetur .adipisicing .elit
@@ -120,8 +121,8 @@
                 </div>
 
                 <div class="col-md-6 col-lg-6 item zoom-on-hover">
-                    <a href="./images/dish2.jpg" class="lightbox">
-                        <img src="./images/dish2.jpg" height="100%" width="100%">
+                    <a href="./images/dish 2.jpg" class="lightbox">
+                        <img src="./images/dish 2.jpg" height="100%" width="100%">
                         <span class="description">
                             <span class="description-heading">Bolognese</span>
                             <span class="description-body">.Lorem .ipsum dolor .sit amet .consectetur .adipisicing .elit
@@ -133,8 +134,8 @@
                 </div>
 
                 <div class="col-md-6 col-lg-6 item zoom-on-hover">
-                    <a href="./images/dish3.jpg" class="lightbox">
-                        <img src="./images/dish3.jpg" height="100%" width="100%">
+                    <a href="./images/dish 3.jpg" class="lightbox">
+                        <img src="./images/dish 3.jpg" height="100%" width="100%">
                         <span class="description">
                             <span class="description-heading">Chicken Biryani</span>
                             <span class="description-body">.Lorem .ipsum dolor .sit amet .consectetur .adipisicing .elit
@@ -146,8 +147,8 @@
                 </div>
 
                 <div class="col-md-6 col-lg-6 item zoom-on-hover">
-                    <a href="./images/dish4.jpg" class="lightbox">
-                        <img src="./images/dish4.jpg" height="100%" width="100%">
+                    <a href="./images/dish 4.jpg" class="lightbox">
+                        <img src="./images/dish 4.jpg" height="100%" width="100%">
                         <span class="description">
                             <span class="description-heading">Cheese Pizza (with Olives)</span>
                             <span class="description-body">.Lorem .ipsum dolor .sit amet .consectetur .adipisicing .elit
@@ -190,6 +191,7 @@
         </div>
     </section>
 
+    <!-- This is the food menu container -->
     <section id="food-menu">
         <div class="container-fluid" style="text-align: center">
             <img class="img-responsive" src="./images/menu.jpg" alt="Food Menu">
@@ -244,33 +246,32 @@
         </div>
     </div>
 
-
-    <!-- Footer -->
-    <footer>
-        <div class="container-fluid footer-wrapper">
-            <div class="row no-gutters" style="text-align: center;">
-                <div class="col-6 col-sm-3 col-md-4 col-centered" id="footer-logo">
-                    <img src="./images/logo-footer.png" height="100%" width="50%" alt="Logo-footer"
-                        class="img-responsive">
-                </div>
-                <div class="w-100"></div>
-                <div class="col-10 col-sm-4 col-md-6 col-centered">Adarsa Marg-1, New Baneshwor,
-                    Kathmandu</div>
-                <div class="w-100"></div>
-                <div class="col-6 col-sm-4 col-centered">(977) 9801223119</div>
-                <div class="w-100"></div>
-                <div class="col-6 col-sm-3 col-centered">Follow Us</div>
-                <div class="w-100"></div>
-                <div class="col-6 col-sm-3 col-md-3 col-centered">
-                    <div id="social-media">
-                        <img src="./images/facebook.png" alt="" height="30px" width="30px">
-                        <img src="./images/twitter.png" alt="" height="30px" width="30px">
-                        <img src="./images/instagram.png" alt="" height="30px" width="30px">
-                    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="container-fluid footer-wrapper">
+        <div class="row no-gutters" style="text-align: center;">
+            <div class="col-6 col-sm-3 col-md-4 col-centered" id="footer-logo">
+                <img src="./images/logo-footer.png" height="100%" width="50%" alt="Logo-footer" class="img-responsive">
+            </div>
+            <div class="w-100"></div>
+            <div class="col-10 col-sm-4 col-md-6 col-centered">Adarsa Marg-1, New Baneshwor,
+                Kathmandu</div>
+            <div class="w-100"></div>
+            <div class="col-6 col-sm-4 col-centered">(977) 9801223119</div>
+            <div class="w-100"></div>
+            <div class="col-6 col-sm-3 col-centered">Follow Us</div>
+            <div class="w-100"></div>
+            <div class="col-6 col-sm-3 col-md-3 col-centered">
+                <div id="social-media">
+                    <img src="./images/facebook.png" alt="" height="30px" width="30px">
+                    <img src="./images/twitter.png" alt="" height="30px" width="30px">
+                    <img src="./images/instagram.png" alt="" height="30px" width="30px">
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 </body>
 <script src="script.js"></script>

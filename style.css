@@ -41,9 +41,14 @@ header {
 }
 
 .solid {
-    top: -30px;
+    transform: translateY(-30px);
     opacity: .6;
-    transition: 1s ease 0s
+    transition: 0.5s all ease;
+}
+
+.header-address-transition {
+    transform: translateY(-30px);
+    transition: 0.5s all ease;
 }
 
 .solid:hover {
@@ -67,6 +72,13 @@ header {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
     font-size: 20px;
+    height: 100%; 
+}
+
+.active-link {
+    color: black;
+    border-bottom: 2px solid black;
+    transition: 0.5s ease-in;
 }
 
 #slider {
@@ -470,6 +482,20 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 990px) {
+
+    #navigator {
+        padding: 10px;
+        right: 2px;
+        opacity: 0.4;
+    }
+
+    #navigator:hover {
+        opacity: 1;
+    }
+
+    #navigator:active {
+        opacity: 1;
+    }
 
     .heading svg {
         width: 80%;       

@@ -4,10 +4,41 @@ function follow_google_maps() {
     win.focus();
 }
 
+// $(window).scroll(function () {
+//     nav = $(".navbar-nav");
+//     menuItems = nav.find("li");
+
+//     var hT = $('#contact').offset().top,
+//         hH = $('#contact').innerHeight() - 200,
+//         wH = $(window).height(),
+//         wS = $(this).scrollTop();
+
+//     var hT1 = $('#food-menu').offset().top,
+//         hH1 = $('#food-menu').innerHeight() - 200,
+//         wH1 = $(window).height(),
+//         wS1 = $(this).scrollTop();
+
+
+//     if (wS >= (hT + hH - wH)) {
+//         menuItems.removeClass("active-link");
+//         $('#contact-link').addClass("active-link");
+//     }
+
+//     else if (wS1 >= (hT1 + hH1 - wH1)) {
+//         menuItems.removeClass("active-link");
+//         $('#menu-link').addClass("active-link");
+//     }
+
+//     else {
+//         menuItems.removeClass("active-link");
+//         $('#home-link').addClass("active-link");
+//     }
+// });
+
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         document.getElementById('navigator').style.display = "block";
     } else {
         console.log("True");
@@ -39,17 +70,22 @@ $(document).ready(function () {
         // check if the window has been scrolled
         if ($(this).scrollTop() > 0) {
             $('.navbar').addClass('solid');
+            $('#header-address').addClass('header-address-transition');
+
         } else {
             $('.navbar').removeClass('solid');
+            $('#header-address').removeClass('header-address-transition');
         }
     });
 });
 
-
-//Border animation
-$(function () {
-    $('.shape').addClass("shape-border");
-    $('.svg-wrapper').click(function () {
-        $('.shape').toggleClass('shape-border');
+$(document).ready(function () {
+    nav = $(".navbar-nav");
+    menuItems = nav.find("li");
+    $(menuItems).click(function () {
+        $(menuItems).removeClass("active-link");
+        $(this).addClass("active-link");
     });
 });
+
+
